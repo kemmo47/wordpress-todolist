@@ -46,18 +46,12 @@
                     dataType: 'json',
                     data: {title:title, _csrf:_csrf},
                     success:function(result){
-                        checkCookies()
+                        window.location=document.location.href;
                     }
                 });
             }
         }
     });
-
-    function checkCookies() {
-        $('#post_title').focus();
-    }
-
-
 
 </script>
 

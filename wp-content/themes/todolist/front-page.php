@@ -7,6 +7,16 @@
                 <input type="hidden" name="todo_csrf" value="<?php echo wp_create_nonce('vicode-csrf') ?>" />
                 <div class="btn-group w-100">
                     <input type="text" class="form-control" id="post_title" name="post_title" placeholder="Add Todo ..." autocomplete="off" required />
+                    <?php
+                    // for non-JS browsers
+                        if($_POST['post_title']) {
+                            ?>
+                                <script type="text/javascript">
+                                    document.getElementById("post_title").focus();
+                                </script>
+                            <?
+                        }
+                    ?>
                     <button style="width:101px" type="submit" class="btn btn-success">Add Todo</button>
                 </div>
             </form>

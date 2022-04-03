@@ -8,7 +8,7 @@
         wp_head();
     ?>
 </head>
-<body onload="checkCookies()">
+<body>
 <div class="position-relative">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
