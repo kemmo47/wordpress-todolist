@@ -1,0 +1,47 @@
+/*
+Theme Name: TodoList
+Text Domain: TodoList
+Version: 1.0
+Description: Todo left sidebar theme
+Tags: left-sidebar, responsive, todo list
+Author: Ho Ngoc Bao Long
+Author URI: https://github.com/kemmo47
+*/
+
+.container .table td button{
+    border: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.container .table td button ion-icon{
+    font-size: 29px;
+}
+
+.container .table td button ion-icon:hover{
+    color: red;
+}
+
+.todo_info{
+    overflow-wrap: anywhere;
+    white-space: break-spaces;
+}
+
+.position-relative .navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.todo_count{
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 1px solid #13caf0;
+    box-shadow: 0px 0px 5px 1px #13caf0;
+    font-weight: 500;
+    margin: 25px 10px;
+}
